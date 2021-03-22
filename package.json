@@ -1,0 +1,22 @@
+{
+  "name": "confetti-when-done",
+  "description": "Confetti when done",
+  "version": "0.0.0",
+  "author": "Aha!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aha-develop/confetti-when-done"
+  },
+  "dependencies": {},
+  "license": "MIT",
+  "ahaExtension": {
+    "contributes": {
+      "commands": {
+        "confetti": {
+          "title": "Fire confetti",
+          "entryPoint": "src/confetti.js"
+        }
+      }
+    }
+  }
+}
