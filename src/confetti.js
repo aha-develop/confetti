@@ -1,19 +1,16 @@
-const fireConfetti = () => {
-  window.confetti({
-    particleCount: 10,
-    spread: 5,
-    origin: { y: 0.6 },
-    zIndex: 10000
+import canvasConfetti from 'https://cdn.skypack.dev/canvas-confetti';
+// Instrument Command.
+aha.on('confetti-when-done.confetti', () => {
+  canvasConfetti({
+    particleCount: 30,
+    spread: 70,
+    origin: { y: 0.7 },
+    zIndex: 10000,
+    useWorker: false
   });
-}
+});
 
-// Fire confetti when feature shipped is received.
-aha.on('aha.workflow-board.shipped', fireConfetti);
-// Also wire up manual command.
-aha.on('confetti', fireConfetti);
-
-// load canvas-confetti
-let confettiEl = document.createElement("script");
-confettiEl.src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.3/dist/confetti.browser.js";
-confettiEl.async = true;
-document.head.appendChild(confettiEl);
+// Bind Command to 'shipped' event.
+aha.on({ event: 'aha.workflow-board.shipped' }, () => {
+  aha.executeCommand('confetti-when-done.confetti');
+});
