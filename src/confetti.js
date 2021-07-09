@@ -2,7 +2,7 @@ import canvasConfetti from 'https://cdn.skypack.dev/canvas-confetti';
 // Instrument Command.
 aha.on('confetti-when-done.confetti', () => {
   canvasConfetti({
-    particleCount: 30,
+    particleCount: 100,
     spread: 70,
     origin: { y: 0.7 },
     zIndex: 10000,
@@ -12,5 +12,10 @@ aha.on('confetti-when-done.confetti', () => {
 
 // Bind Command to 'shipped' event.
 aha.on({ event: 'aha.workflow-board.shipped' }, () => {
+  aha.executeCommand('confetti-when-done.confetti');
+});
+
+// Bind Command to 'sprint-completed' event.
+aha.on({ event: 'aha.sprint-planner.sprint-completed' }, () => {
   aha.executeCommand('confetti-when-done.confetti');
 });
