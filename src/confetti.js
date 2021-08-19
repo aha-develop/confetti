@@ -16,6 +16,6 @@ aha.on({ event: 'aha.workflow-board.shipped' }, () => {
 });
 
 // Bind Command to 'sprint-completed' event.
-aha.on({ event: 'aha.sprint-planner.sprint-completed' }, () => {
+aha.on({ event: 'aha.sprint-planner.completed-sprint' }, () => {
   aha.executeCommand('confetti-when-done.confetti');
 });
