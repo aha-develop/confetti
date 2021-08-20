@@ -19,3 +19,7 @@ aha.on({ event: 'aha.workflow-board.shipped' }, () => {
 aha.on({ event: 'aha.sprint-planner.completed-sprint' }, () => {
   aha.executeCommand('confetti-when-done.confetti');
 });
+
+$(document).on('click', '.aha-icon.aha-icon-pending', () => {
+  aha.executeCommand('confetti-when-done.confetti');
+});
