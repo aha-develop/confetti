@@ -10,7 +10,7 @@
   "dependencies": {},
   "license": "MIT",
   "ahaExtension": {
-    "cspSources": ["https://cdn.skypack.dev/"],
+    "cspSources": ["https://cdn.skypack.dev/", "blob:"],
     "contributes": {
       "commands": {
         "confetti": {
