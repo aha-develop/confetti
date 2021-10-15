@@ -20,6 +20,7 @@ aha.on({ event: 'aha.sprint-planner.completed-sprint' }, () => {
   aha.executeCommand('confetti-when-done.confetti');
 });
 
+// Bind Command to when To-dos are completed
 $(document).on('click', '.aha-icon.aha-icon-pending', () => {
   aha.executeCommand('confetti-when-done.confetti');
 });
