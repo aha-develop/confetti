@@ -5,7 +5,7 @@
   "author": "Aha! (support@aha.io)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aha-develop/confetti-when-done"
+    "url": "https://github.com/aha-develop/confetti"
   },
   "dependencies": {},
   "license": "MIT",
