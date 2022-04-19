@@ -14,7 +14,7 @@ https://user-images.githubusercontent.com/125077/116922398-8f63c000-ac12-11eb-97
 
 **Note: In order to install an extension into your Aha! Develop account, you must be an account administrator.**
 
-Install the Zendesk extension by clicking [here](https://secure.aha.io/settings/account/extensions/install?url=https%3A%2F%2Fsecure.aha.io%2Fextensions%2Faha-develop.confetti-when-done.gz).
+Install the Confetti extension by clicking [here](https://secure.aha.io/settings/account/extensions/install?url=https%3A%2F%2Fsecure.aha.io%2Fextensions%2Faha-develop.confetti-when-done.gz).
 
 ## Working on the extension
 
