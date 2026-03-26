@@ -1,4 +1,4 @@
-import canvasConfetti from 'https://cdn.skypack.dev/canvas-confetti';
+import canvasConfetti from 'canvas-confetti';
 // Instrument Command.
 aha.on('confetti-when-done.confetti', () => {
   canvasConfetti({
